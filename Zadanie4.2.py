@@ -1,15 +1,21 @@
 def is_text_a_palindrome(text):
     """
+        Description:
         This function checks if the 'text' is palindrome,
-        it means if they are the same if we read them from lef to right, 
+        it means if they are the same if we read them from left to right, 
         and from right to left.
+
+        Arguments:
+        text (string)
+
+        Returns:
+        This function returns boolean True if text is a palindrome otherwise False.
     """
-    right_index = 0
-    for letter in text:
-        right_index -= 1
-        if letter != text[right_index]:
-            return False
-    return True
+    reversed_text = text[::-1]
+    if text == reversed_text:
+        return True
+    else:
+        return False
 
 
 ## test ##
