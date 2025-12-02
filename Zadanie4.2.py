@@ -11,11 +11,7 @@ def is_text_a_palindrome(text):
         Returns:
         This function returns boolean True if text is a palindrome otherwise False.
     """
-    reversed_text = text[::-1]
-    if text == reversed_text:
-        return True
-    else:
-        return False
+    return text == text[::-1]
 
 
 ## test ##
